@@ -1,195 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  $1
-  <script>
-    function toggleDarkMode() {
-      document.documentElement.classList.toggle('dark');
-    }
-  </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Radhika Aggarwal | Web Developer</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      AOS.init();
+    });
+  </script>
   <style>
-    .tech-scroll {
-      overflow-x: auto;
-      display: flex;
-      gap: 1rem;
-      padding: 1rem;
-      animation: scroll-tech 20s linear infinite;
-    }
-    @keyframes scroll-tech {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
   </style>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    AOS.init();
-  });
-</script>
-$1
-$1bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200$3>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
   <!-- Header -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
+  <header class="bg-gray-800 shadow-md sticky top-0 z-50">
     <div class="max-w-6xl mx-auto p-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-pink-600">Radhika Aggarwal</h1>
-      <button onclick="toggleDarkMode()" class="inline-block bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-white px-4 py-2 rounded-full hover:bg-gray-300">Toggle Dark Mode</button> $1
-        <a href="Radhika_Aggarwal_Resume.pdf" download class="inline-block bg-pink-600 text-white px-4 py-2 rounded-full hover:bg-pink-700">Resume</a>
-        <a href="#about" class="hover:text-pink-600">About</a>
-        <a href="#projects" class="hover:text-pink-600">Projects</a>
-        <a href="#skills" class="hover:text-pink-600">Skills</a>
-        <a href="#education" class="hover:text-pink-600">Education</a>
-        <a href="#contact" class="hover:text-pink-600">Contact</a>
+      <h1 class="text-2xl font-bold text-pink-500">Radhika Aggarwal</h1>
+      <nav class="space-x-4 text-sm">
+        <a href="#about" class="hover:text-pink-400">About</a>
+        <a href="#projects" class="hover:text-pink-400">Projects</a>
+        <a href="#skills" class="hover:text-pink-400">Skills</a>
+        <a href="#education" class="hover:text-pink-400">Education</a>
+        <a href="#contact" class="hover:text-pink-400">Contact</a>
+        <a href="Radhika_Aggarwal_Resume.pdf" download class="bg-pink-600 text-white px-4 py-1 rounded-full hover:bg-pink-700">Resume</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="bg-pink-100 py-20 text-center animate-pulse">
-    <h2 class="text-4xl font-bold mb-2">Hi, I'm Radhika — a Web Developer</h2>
+  <section class="bg-gray-800 py-20 text-center">
+    <h2 class="text-4xl font-bold mb-2 text-pink-500">Hi, I'm Radhika — a Web Developer</h2>
     <p class="text-lg max-w-2xl mx-auto">Final-year Computer Science student passionate about building full-stack applications that solve meaningful problems using clean code and modern tools.</p>
   </section>
 
   <!-- About -->
-  $1 data-aos="fade-up">
+  <section id="about" class="py-16" data-aos="fade-up">
     <div class="max-w-4xl mx-auto text-center">
-      <h3 class="text-2xl font-semibold mb-4">About Me</h3>
-      <p class="text-gray-700 mb-4 text-lg leading-relaxed">I'm Radhika Aggarwal, a passionate Web Developer with a strong grip on full-stack technologies and clean architecture. Currently in my final year of B.Tech in Computer Science at Banasthali Vidyapith, I specialize in building scalable, user-friendly, and efficient web applications.</p>
-      <p class="text-gray-700 mb-4 text-lg leading-relaxed">I thrive in translating ideas into functional interfaces and have a keen eye for design, accessibility, and performance optimization. With practical internship experience at NITTTR Bhopal and strong academic grounding in data structures, algorithms, and software engineering, I strive to deliver elegant solutions to real-world problems.</p>
-      <p class="text-gray-700 text-lg leading-relaxed">Beyond coding, I enjoy mentoring, organizing tech events, and exploring UI/UX principles. My aim is to grow as a developer who contributes meaningful code and inspires future creators.</p>
-    </div>
-      <p class="text-gray-700 mb-4">I'm a final-year B.Tech student at Banasthali Vidyapith with a strong foundation in Data Structures and Algorithms. I love building intuitive and scalable full-stack applications.</p>
-      <p class="text-gray-700">During my internship at NITTTR Bhopal, I built automated reporting systems for educational institutes, reducing manual work and improving data accuracy across sessions.</p>
+      <h3 class="text-2xl font-semibold mb-4 text-pink-400">About Me</h3>
+      <p class="mb-4 leading-relaxed">I'm Radhika Aggarwal, a passionate Web Developer with strong full-stack skills. Currently pursuing my B.Tech in Computer Science at Banasthali Vidyapith, I specialize in building scalable, user-friendly, and efficient web applications.</p>
+      <p class="mb-4 leading-relaxed">During my internship at NITTTR Bhopal, I worked on automating academic report systems, improving data accuracy and reducing manual tasks. I’m deeply interested in UI/UX and performance optimization.</p>
+      <p class="leading-relaxed">Beyond coding, I love mentoring, organizing tech events, and continuously learning better design and development practices.</p>
     </div>
   </section>
 
   <!-- Projects -->
-  $1 data-aos="fade-up">
-    $1
-      <div class="text-sm text-gray-600 text-center md:text-left px-4 md:px-0 mb-4">Swipe left to see more projects on smaller screens →</div>
-      <h3 class="text-2xl font-semibold text-center mb-10">Projects</h3>
-      $1
-        <div class="bg-white dark:bg-gray-800 shadow-lg p-6 rounded-xl hover:shadow-xl transition">
-          <img src="https://via.placeholder.com/300x180.png?text=PoC+System" alt="PoC Report Screenshot" class="rounded mb-4">
-          <h4 class="text-xl font-bold">PoC Report Generation</h4>
-          <p class="text-sm mt-2">Academic reporting system with MySQL and JSP for session-wise analytics.</p>
-          <a href="https://github.com/itsradhika99/poc-report-generation" class="text-pink-600 text-sm mt-4 inline-block">View on GitHub</a>
+  <section id="projects" class="py-16" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-semibold text-center mb-10 text-pink-400">Projects</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-800 shadow-lg p-6 rounded-xl hover:shadow-xl transition">
+          <h4 class="text-xl font-bold text-white">PoC Report Generation</h4>
+          <p class="text-sm mt-2 text-gray-300">Academic reporting system using MySQL and JSP for session-wise analytics.</p>
+          <a href="https://github.com/itsradhika99/poc-report-generation" class="text-pink-500 text-sm mt-4 inline-block">View on GitHub</a>
         </div>
-
-        <div class="bg-white dark:bg-gray-800 shadow-lg p-6 rounded-xl hover:shadow-xl transition">
-          <img src="https://via.placeholder.com/300x180.png?text=DevConnector" alt="DevConnector Screenshot" class="rounded mb-4">
-          <h4 class="text-xl font-bold">DevConnector</h4>
-          <p class="text-sm mt-2">Django-based social platform simulating real-world interactions via REST APIs.</p>
-          <a href="https://github.com/itsradhika99/DevConnector-Django-master" class="text-pink-600 text-sm mt-4 inline-block">View on GitHub</a>
+        <div class="bg-gray-800 shadow-lg p-6 rounded-xl hover:shadow-xl transition">
+          <h4 class="text-xl font-bold text-white">DevConnector</h4>
+          <p class="text-sm mt-2 text-gray-300">Django-based social platform simulating real-world developer interactions.</p>
+          <a href="https://github.com/itsradhika99/DevConnector-Django-master" class="text-pink-500 text-sm mt-4 inline-block">View on GitHub</a>
         </div>
-
-        <div class="bg-white dark:bg-gray-800 shadow-lg p-6 rounded-xl hover:shadow-xl transition">
-          <img src="https://via.placeholder.com/300x180.png?text=LRVS+Shop" alt="LRVS E-commerce Screenshot" class="rounded mb-4">
-          <h4 class="text-xl font-bold">LRVS E-commerce</h4>
-          <p class="text-sm mt-2">Full-stack e-commerce website built using React, Node.js, and MongoDB.</p>
-          <a href="https://github.com/itsradhika99/lrvs" class="text-pink-600 text-sm mt-4 inline-block">View on GitHub</a>
-        </div>
-      $2
-
-        <div class="bg-white shadow-lg p-6 rounded-xl hover:shadow-xl transition">
-          <h4 class="text-xl font-bold">DevConnector</h4>
-          <p class="text-sm mt-2">Django-based social platform simulating real-world interactions via REST APIs.</p>
-          <a href="https://github.com/itsradhika99/DevConnector-Django-master" class="text-pink-600 text-sm mt-4 inline-block">View on GitHub</a>
-        </div>
-
-        <div class="bg-white shadow-lg p-6 rounded-xl hover:shadow-xl transition">
-          <h4 class="text-xl font-bold">LRVS E-commerce</h4>
-          <p class="text-sm mt-2">Full-stack e-commerce website built using React, Node.js, and MongoDB.</p>
-          <a href="https://github.com/itsradhika99/lrvs" class="text-pink-600 text-sm mt-4 inline-block">View on GitHub</a>
+        <div class="bg-gray-800 shadow-lg p-6 rounded-xl hover:shadow-xl transition">
+          <h4 class="text-xl font-bold text-white">LRVS E-commerce</h4>
+          <p class="text-sm mt-2 text-gray-300">Full-stack e-commerce website built using React, Node.js, and MongoDB.</p>
+          <a href="https://github.com/itsradhika99/lrvs" class="text-pink-500 text-sm mt-4 inline-block">View on GitHub</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="bg-gray-900 py-6">
-    <div class="tech-scroll text-white font-semibold text-sm whitespace-nowrap">
-      <span>ReactJS</span>
-      <span>Node.js</span>
-      <span>Tailwind</span>
-      <span>Django</span>
-      <span>MongoDB</span>
-      <span>MySQL</span>
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>Git</span>
-      <span>Java</span>
-    </div>
-  </section>
-
-$1
-  $1 data-aos="fade-up">
+  <!-- Skills -->
+  <section id="skills" class="py-16" data-aos="fade-up">
     <div class="max-w-4xl mx-auto text-center">
-      <h3 class="text-2xl font-semibold mb-6">Skills</h3>
-      <div class="flex flex-wrap justify-center gap-4">
-        <span class="bg-pink-200 px-4 py-2 rounded-full">HTML/CSS/JS</span>
-        <span class="bg-pink-200 px-4 py-2 rounded-full">Tailwind CSS</span>
-        <span class="bg-pink-200 px-4 py-2 rounded-full">ReactJS</span>
-        <span class="bg-pink-200 px-4 py-2 rounded-full">Node.js</span>
-        <span class="bg-pink-200 px-4 py-2 rounded-full">MongoDB</span>
-        <span class="bg-pink-200 px-4 py-2 rounded-full">Django</span>
-        <span class="bg-pink-200 px-4 py-2 rounded-full">Python</span>
-        <span class="bg-pink-200 px-4 py-2 rounded-full">Java</span>
-        <span class="bg-pink-200 px-4 py-2 rounded-full">SQL</span>
-        <span class="bg-pink-200 px-4 py-2 rounded-full">JSP</span>
-        <span class="bg-pink-200 px-4 py-2 rounded-full">Servlets</span>
-        <span class="bg-pink-200 px-4 py-2 rounded-full">REST APIs</span>
-        <span class="bg-pink-200 px-4 py-2 rounded-full">Git</span>
+      <h3 class="text-2xl font-semibold mb-6 text-pink-400">Skills</h3>
+      <div class="flex flex-wrap justify-center gap-4 text-sm">
+        <span class="bg-gray-700 px-4 py-2 rounded-full">HTML/CSS/JS</span>
+        <span class="bg-gray-700 px-4 py-2 rounded-full">Tailwind CSS</span>
+        <span class="bg-gray-700 px-4 py-2 rounded-full">ReactJS</span>
+        <span class="bg-gray-700 px-4 py-2 rounded-full">Node.js</span>
+        <span class="bg-gray-700 px-4 py-2 rounded-full">MongoDB</span>
+        <span class="bg-gray-700 px-4 py-2 rounded-full">Django</span>
+        <span class="bg-gray-700 px-4 py-2 rounded-full">Python</span>
+        <span class="bg-gray-700 px-4 py-2 rounded-full">Java</span>
+        <span class="bg-gray-700 px-4 py-2 rounded-full">SQL</span>
+        <span class="bg-gray-700 px-4 py-2 rounded-full">REST APIs</span>
+        <span class="bg-gray-700 px-4 py-2 rounded-full">Git</span>
       </div>
-    </div>
-  </section>
-
-  <!-- Achievements -->
-  <section class="py-16 bg-gray-100">
-    <div class="max-w-4xl mx-auto text-center">
-      <h3 class="text-2xl font-semibold mb-6">Achievements</h3>
-      <ul class="list-disc list-inside text-gray-700">
-        <li>Top 5 Rank – Banasthali Vidyapith Coding Contest (2024)</li>
-        <li>Completed certifications in Java, Python, Web Development (Coursera, Udemy)</li>
-        <li>Led workshops on structured coding under college coding club</li>
-      </ul>
     </div>
   </section>
 
   <!-- Education -->
-  $1 data-aos="fade-up">
+  <section id="education" class="py-16" data-aos="fade-up">
     <div class="max-w-4xl mx-auto text-center">
-      <h3 class="text-2xl font-semibold mb-6">Education</h3>
-      <p><strong>Banasthali Vidyapith</strong><br>B.Tech in Computer Science (2021 – 2025)<br>GPA: 8.51/10.00</p>
-      <br>
-      <p><strong>Vaish Model Sr. Sec. School</strong><br>Senior Secondary (CBSE), 96.4%</p>
+      <h3 class="text-2xl font-semibold mb-6 text-pink-400">Education</h3>
+      <p><strong>Banasthali Vidyapith</strong><br />B.Tech in Computer Science (2021 – 2025)<br />GPA: 8.51/10.00</p>
+      <br />
+      <p><strong>Vaish Model Sr. Sec. School</strong><br />Senior Secondary (CBSE), 96.4%</p>
     </div>
   </section>
 
-  $1
-      <form class="mt-8 space-y-4 text-left max-w-xl mx-auto" name="contact" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact">
-        <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-2 border border-gray-300 rounded-md dark:bg-gray-800 dark:border-gray-600">
-        <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-2 border border-gray-300 rounded-md dark:bg-gray-800 dark:border-gray-600">
-        <textarea name="message" placeholder="Your Message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-md dark:bg-gray-800 dark:border-gray-600"></textarea>
+  <!-- Contact -->
+  <section id="contact" class="py-16" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-2xl font-semibold mb-4 text-pink-400">Contact Me</h3>
+      <form name="contact" method="POST" data-netlify="true" class="mt-6 space-y-4 text-left max-w-xl mx-auto">
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-2 rounded-md bg-gray-800 border border-gray-600 text-white" />
+        <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-2 rounded-md bg-gray-800 border border-gray-600 text-white" />
+        <textarea name="message" placeholder="Your Message" rows="4" required class="w-full px-4 py-2 rounded-md bg-gray-800 border border-gray-600 text-white"></textarea>
         <button type="submit" class="bg-pink-600 text-white px-6 py-2 rounded-full hover:bg-pink-700">Send Message</button>
       </form>
-      <hr class="my-8">
-      <h3 class="text-2xl font-semibold mb-4">Contact Me</h3>
-      <a href="Radhika_Aggarwal_Resume.pdf" download class="inline-block bg-pink-600 text-white px-6 py-2 mb-4 rounded-full hover:bg-pink-700">Download Resume</a>
-      <p>Email: <a href="mailto:radhikaaggarwal9899@gmail.com" class="text-pink-600">radhikaaggarwal9899@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/radhika-aggarwal-4292bb227" class="text-pink-600">View Profile</a></p>
-      <p>GitHub: <a href="https://github.com/itsradhika99" class="text-pink-600">View Projects</a></p>
+      <div class="mt-8 text-sm text-gray-400">
+        <p>Email: <a href="mailto:radhikaaggarwal9899@gmail.com" class="text-pink-400">radhikaaggarwal9899@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/radhika-aggarwal-4292bb227" class="text-pink-400">View Profile</a></p>
+        <p>GitHub: <a href="https://github.com/itsradhika99" class="text-pink-400">View Projects</a></p>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-pink-100 text-center p-4">
+  <footer class="bg-gray-800 text-center p-4 text-sm text-gray-500">
     <p>&copy; 2025 Radhika Aggarwal. All rights reserved.</p>
   </footer>
 </body>
